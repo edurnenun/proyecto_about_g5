@@ -15,13 +15,12 @@ body{
 #mission{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/proyecto_about_g5/images/fondo.jpg");
     width: 100%;
-    height: 20%;
+    height: 20em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    padding-bottom: 10em;
 }
 .cont{
     position: absolute;
@@ -82,9 +81,6 @@ article>h2{
     padding: 4em;
     column-gap: 1em;
     row-gap:1em;
-}
-.title-p{
-    margin: 2em;
 }
 .block a:hover{
     opacity: 0.8;
