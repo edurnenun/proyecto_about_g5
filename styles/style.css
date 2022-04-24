@@ -4,16 +4,62 @@
 }
 
 /*Reset*/
+*{
+    color: #005252;
+}
 
 /*Header Viktória*/
 
 /*Mision Jaciniris*/
 
 /*Historia Edurne*/
-
+.historia {
+    display: grid;
+    
+}
 /*Idea Jaciniris*/
 
 /*Proyectos Viktória*/
 
 /*Miembros Edurne*/
+.miembros {
+    display: grid;
+    grid-column: 1fr 1fr;
+    border: 5px solid black;
+    text-align: center;
+
+}
+
+.miembros ul{
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    border: 5px solid red;
+   
+
+    
+}
+
+
+.tecla {
+    width: 50%;
+    border: 5px solid #008080;
+    border-radius: 50px;
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    align-items: center;
+    box-shadow: 5px 5px 5px 2px #ff7f7f;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    font-size: 200%;
+    
+}
+
+.scroll-top {
+}
+
+
+
 
