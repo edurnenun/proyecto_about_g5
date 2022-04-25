@@ -344,7 +344,7 @@ details:hover{
 /*Reponsive*/
 
 @media (min-width: 996px){
-    /*History Edurne*/
+    /*Header Edurne*/
     nav{
         height: 70px;
         
@@ -355,8 +355,7 @@ details:hover{
     #logo{
         border:1px solid blue;
         height: 100%;
-    }
-    
+    } 
     #check{
         display: none;
     }
@@ -378,6 +377,8 @@ details:hover{
     .menu-nav li{
         line-height: 60px;/*para corregir line height del movil*/
     }
+
+    /*History Edurne*/
     #history{
         display: grid;
         width: 100%;
