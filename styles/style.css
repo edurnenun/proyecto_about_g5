@@ -29,6 +29,11 @@ nav {
     height: 50px;
 }
 
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /*Mission Jaciniris*/
 #mission{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/proyecto_about_g5/images/fondo.jpg");
@@ -63,17 +68,24 @@ nav {
 }
 
 /*History Edurne*/
-#history {
+#history {/*corregir columas*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center; 
+    grid-column: 1fr 1fr;
+    text-align: center;
 }
+
 #history ul {
     display: grid;
     grid-template-columns: repeat(4, 1 fr);
-    text-align: center; 
+    justify-content: center;
 }
-
+#history ul img {
+    width: 70%;
+}
+#history h2 {
+    text-align: center;
+    font-size: 300%;
+}
 /*Idea Jaciniris*/
 #idea>h2{
     text-align: center;
@@ -165,6 +177,7 @@ iframe:hover{
     display: grid;
     grid-column: 1fr 1fr;
     text-align: center;
+    margin-top: 50px;
 }
 #membres ul{
     display: grid;
@@ -202,18 +215,19 @@ iframe:hover{
         height: 50px;
     }
     #history {
-        display: grid; 
+        display: grid;
         width: 100%;
+        
     }
     #history h2 {
         font-size: 300%;
         text-align: center;
     }
     #history ul{
+        margin-left: 0%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        justify-content: center;
-        text-align: center;
+        display: inline-grid;
+        grid-template-columns: repeat(4, 1fr); 
     }
     #history ul li img{
         width: 100%;
@@ -246,7 +260,8 @@ iframe:hover{
     }
 
     /*Membres Edurne*/
-    #membres {    
+    #membres {   
+        margin-top: 200px; 
         text-align: center;
     }
     #membres ul{
