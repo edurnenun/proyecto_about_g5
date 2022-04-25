@@ -12,6 +12,7 @@
 }
 body {
     background-color: #f5f5f5;
+    margin: auto;
 }
 nav, section {
 	display: block;
@@ -21,9 +22,6 @@ ul{
 }
 a:hover {
     color: #ff7f7f;
-  }
-body{
-    margin: auto;
 }
 
 /*Header Viktória*/
@@ -72,6 +70,7 @@ nav {
 /*Idea Jaciniris*/
 #idea>h2{
     text-align: center;
+    font-size: 300%;
 }
 .cloud{
         width: 20em;
@@ -83,17 +82,17 @@ nav {
 /*Projects Viktória*/
 article>h2{
     text-align: center;
+    font-size: 300%;
 }
 .block{
     display: grid;
     grid-template-rows: repeat(3, 4rem);
-    grid-template-columns: repeat(4,4em);
+    grid-template-columns: repeat(4, 4em);
     justify-content: center;
     align-items: center;
     place-items: center;
-    padding: 4em;
-    column-gap: 1em;
-    row-gap:1em;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
 }
 .title-p{
     margin: 2em;
@@ -152,10 +151,6 @@ iframe:hover{
 .block>section{
     width: 5em;
     height: 5em;
-}
-.block{
-    column-gap: 1.5em;
-    row-gap: 1.5em;
 }
 
 /*Membres Edurne*/
@@ -275,9 +270,3 @@ iframe:hover{
         color: #005252;
     } 
 }
-
-
-
-
-
-
