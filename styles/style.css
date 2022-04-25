@@ -73,6 +73,7 @@ nav {
 }
 
 .menu-nav{
+    position: fixed;
     width: 100%;
     height: 100%;
     background: #f5f5f5;
@@ -84,7 +85,6 @@ nav {
 
 nav ul li {
     display: block;
-    margin: 50px 0;
     line-height: 30px;
 }
 .menu-nav a {
@@ -323,30 +323,35 @@ details:hover{
 @media (min-width: 996px){
     /*History Edurne*/
     nav{
-        border: 5px solid green;
         height: 70px;
+        
         display: flex;
         flex-direction: row;
         width: 100%;
     }
     #logo {
+        border:1px solid blue;
         height: 100%;
     }
+    
     #check {
         display: none;
     }
     nav .fa-bars {
         display: none;
     }
-     .menu-nav {
-        border: 5px solid red;
+    .menu-nav {
+        top: 0;
+        position: inherit;/* lo he puesto para deshabilitat el position fix del movil*/
+        width: 100%;
         background-color: #008080;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        padding-left: 500px;
      }
         
     .menu-nav a{
-        color: #005252;
+        color: #f5f5f5;
     }
     .menu-nav li {
         margin: 0;
