@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href=""> <!--url-pages github-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/proyecto_about_g5/styles/style.css">
     <script src="https://kit.fontawesome.com/9ce40e58ae.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+  var x = document.getElementById("menu-nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+    
 
 </head>
 <body>
-    <!--Header Start Viktória -->
+    <!--Header Start Edurne -->
     <header id="header"> <!--Se pone id para poder direccionar boton flecha hacia el header-->
         <nav>
-            <img id="logo" src="images/logo.png" alt="logo">
-            <div class="respmenu"></div>
-                <input type="checkbox">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
-                <i class="fas fa-times"></i>
+            </label>
+            <img id="logo" src="images/logo.png" alt="logo">
+            
+                <!--menu navegacion (oculto por defecto)-->
                 <ul class="menu-nav">
                     <li><a href="#mission">Mission</a></li>
                     <li><a href="#history">History</a></li>
@@ -28,10 +42,10 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#membres">Membres</a></li>
                 </ul>
-            </div>
+                <!--menu hamburguesa-->
+                
         </nav>
         <h1>FEV</h1>
-
       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
     </header>
     <!--Header End-->
@@ -42,11 +56,12 @@
             <section class="cont">
                 <h2 class="title-m">MISSION</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <!--Boton arriba-->
-            <a href="#header" class="scroll-top" title="Ir arriba">
-                <i class="fa-solid fa-circle-up"></i>
-            </a>
-             </section>
+            
+                <!--Boton arriba-->
+                <a href="#header" class="scroll-top" title="Ir arriba">
+                    <i class="fa-solid fa-circle-up"></i>
+                </a>
+            </section>
         </section>
         <!--Mission End-->
 
@@ -91,7 +106,7 @@
         </section>
         <!--Idea End-->
 
-        <!--Projects Start Viktória -->
+        <!--Projects Start Jaciniris -->
         <section id="projects">
             <article>
                 <h2 class="title-p">PROJECTS</h2>
@@ -148,6 +163,7 @@
                     </section>
                 </section>
             </article>
+            
             <!--Boton arriba-->
             <a href="#header" class="scroll-top" title="Ir arriba">
                 <i class="fa-solid fa-circle-up"></i>
@@ -176,6 +192,7 @@
                     </details>
                 </li>
             </ul>
+
             <!--Boton arriba-->
             <a href="#header" class="scroll-top" title="Ir arriba">
                 <i class="fa-solid fa-circle-up"></i>
