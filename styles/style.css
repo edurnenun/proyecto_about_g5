@@ -58,29 +58,43 @@ nav {
     justify-content: space-around;
 }
 
-.menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu-toggle {
-    display: none;
-}
-.menu-button,
-.menu-button::before,
-.menu-button::after {
+.respmenu a {
+    color: inherit;
     display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ff7f7f;
+    max-width: 200px;
     background-color: #f5f5f5;
-    position: absolute;
-    height: 4px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
+    font-variant: small-caps;
+    text-shadow:  1px 1px #005252;
 }
+.respmenu input[type="checkbox"], 
+.respmenu .fa-bars, 
+.respmenu .fa-times{
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+}
+.respmenu input[type="checkbox"]{
+    opacity: 0;
+}
+.respmenu input:checked ~ .menu-nav {
+    display: block;
+}
+.respmenu input:checked ~ .fa-bars {
+    display: none;
+} 
+.respmenu input:checked ~ .fa-times {
+    display: none;
+} 
+.respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+} 
 h1 {
     color: #ff7f7f;
     font-size: 500%;
@@ -273,18 +287,21 @@ iframe:hover{
     /*History Edurne*/
     nav{
         height: 50px;
-    }
-    .menu-button-container{
         display: grid;
     }
+    
     .menu-nav{
         position: absolute;
-        top: 0;
+        top: 10px;
         display: grid;
-        display: inline-block;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
+        grid-template-columns: repeat(5, 1fr);
+        width: 30%;
+        right: 50px;
+        font-size: 30px;
+        gap: 20px;
+    }
+    .menu-nav a{
+        color: #f5f5f5;
     }
     #history {
         display: grid;
