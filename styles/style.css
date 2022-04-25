@@ -277,6 +277,9 @@ iframe:hover{
 .tecla img{
     width: 100%;
 }
+details:hover{
+    color: #ff7f7f;
+}
 .scroll-top{ 
     color: #005252;
 }    
