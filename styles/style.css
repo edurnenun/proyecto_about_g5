@@ -130,24 +130,24 @@ section {
 }
 
 /*History Edurne*/
-#history {/*corregir columas*/
+#history{/*corregir columas*/
     display: grid;
     grid-column: 1fr 1fr;
     text-align: center;
 }
-
-#history ul {
+#history ul{
     display: grid;
     grid-template-columns: repeat(4, 1 fr);
     justify-content: center;
 }
-#history ul img {
+#history ul img{
     width: 70%;
 }
-#history h2 {
+#history h2{
     text-align: center;
     font-size: 300%;
 }
+
 /*Idea Jaciniris*/
 #idea>h2{
     text-align: center;
@@ -233,7 +233,7 @@ iframe:hover{
 }
 
 /*Membres Edurne*/
-#membres {
+#membres{
     display: grid;
     grid-column: 1fr 1fr;
     text-align: center;
@@ -243,10 +243,10 @@ iframe:hover{
     display: grid;
     grid-column: repeat(3, 1fr);
 }
-#membres h2 {
+#membres h2{
     font-size: 300%;
 }
-.tecla {
+.tecla{
     width: 50%;
     border: 5px solid #008080;
     border-radius: 50px;
@@ -260,10 +260,10 @@ iframe:hover{
     margin-bottom: 20px;
     font-size: 150%;    
 }
-.tecla img {
+.tecla img{
     width: 100%;
 }
-.scroll-top { 
+.scroll-top{ 
     color: #005252;
 }    
 
@@ -271,7 +271,7 @@ iframe:hover{
 
 @media (min-width: 996px){
     /*History Edurne*/
-    nav {
+    nav{
         height: 50px;
     }
     .menu-button-container{
@@ -291,7 +291,7 @@ iframe:hover{
         width: 100%;
         
     }
-    #history h2 {
+    #history h2{
         font-size: 300%;
         text-align: center;
     }
@@ -335,17 +335,22 @@ iframe:hover{
     }
 
     /*Membres Edurne*/
+<<<<<<< HEAD
     #membres {   
+=======
+    #membres{   
+        margin-top: 200px; 
+>>>>>>> 58a91ac95eea07ec70a06423c3d06ecbb5ed00ae
         text-align: center;
     }
     #membres ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);   
     }   
-    #membres h2 {
+    #membres h2{
         font-size: 300%;
     }
-    .tecla {
+    .tecla{
         width: 70%;
         border: 5px solid #008080;
         border-radius: 50px;
@@ -359,8 +364,14 @@ iframe:hover{
         margin-bottom: 20px;
         font-size: 150%;    
     }
-    .tecla img {
+    .tecla img{
         width: 100%;
     }    
+<<<<<<< HEAD
     
+=======
+    .scroll-top{ 
+        color: #005252;
+    } 
+>>>>>>> 58a91ac95eea07ec70a06423c3d06ecbb5ed00ae
 }
