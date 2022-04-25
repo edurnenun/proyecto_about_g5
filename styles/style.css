@@ -201,10 +201,6 @@ header h3 {
 #history .scroll-top{ 
     margin-top: 0.5em;
 }
-#history ul img:hover{
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
-}
 
 /*Idea Jaciniris*/
 #idea{
