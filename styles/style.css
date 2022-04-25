@@ -100,8 +100,6 @@ article>h2{
     place-items: center;
     column-gap: 1.5em;
     row-gap: 1.5em;
-}
-.title-p{
     margin: 2em;
 }
 .block a:hover{
@@ -243,6 +241,9 @@ iframe:hover{
     .block{
         column-gap: 11.5em;
         row-gap: 11.5em;
+    }
+    .title-p{
+        margin-bottom: 2.5em;
     }
 
     /*Membres Edurne*/
