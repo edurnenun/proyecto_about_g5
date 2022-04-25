@@ -302,7 +302,10 @@ iframe:hover{
 }
 .tecla img{
     width: 100%;
-}   
+}
+details:hover{
+    color: #ff7f7f;
+}  
 
 /*Reponsive*/
 
@@ -312,7 +315,6 @@ iframe:hover{
         height: 50px;
         display: grid;
     }
-    
     .menu-nav{
         position: absolute;
         top: 10px;
@@ -326,7 +328,7 @@ iframe:hover{
     .menu-nav a{
         color: #f5f5f5;
     }
-    #history {
+    #history{
         display: grid;
         width: 100%;
         
