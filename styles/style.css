@@ -4,61 +4,285 @@
 }
 
 /*Reset*/
-*{
+*{  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
     color: #005252;
 }
+nav, section {
+	display: block;
+}
+ul{
+    list-style: none;
+}
+a:hover {
+    color: #ff7f7f;
+  }
 
+body{
+    margin: auto;
+}
 /*Header Viktória*/
 
 /*Mision Jaciniris*/
-
-/*Historia Edurne*/
-.historia {
-    display: grid;
-    
+#mission{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/proyecto_about_g5/images/fondo.jpg");
+    width: 100%;
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
-/*Idea Jaciniris*/
-
-/*Proyectos Viktória*/
-
-/*Miembros Edurne*/
-.miembros {
-    display: grid;
-    grid-column: 1fr 1fr;
-    border: 5px solid black;
+.cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: auto;
+}
+.title-m{
+    color: white;
     text-align: center;
-
+}
+.cont>p{
+    color: white; 
+    text-align: justify;
+}
+@media (min-width: 100px){
+    .title-m{
+        font-size: 4.0vh;
+    }
+    .cont>p{
+        font-size: 2vmin;
+    }
 }
 
-.miembros ul{
-    display: grid;
-    grid-column: repeat(3, 1fr);
-    border: 5px solid red;
-   
-
-    
+/*Idea Jaciniris*/
+#idea>h2{
+    text-align: center;
 }
-
-
-.tecla {
-    width: 50%;
-    border: 5px solid #008080;
-    border-radius: 50px;
+@media (max-width: 960px){
+    .cloud{
+        width: 20em;
+        height: 20em;
+        display:block;
+        margin:auto;
+    }
+}
+@media (min-width: 961px){
+    .cloud{
+        width: 40em;
+        height: 40em;
+        display:block;
+        margin:auto;
+    }
+}
+/*Proyectos Viktória*/
+article>h2{
+    text-align: center;
+}
+.block{
     display: grid;
-    grid-column: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 4rem);
+    grid-template-columns: repeat(4,4em);
+    justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 5px 2px #ff7f7f;
-    padding: 10px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    place-items: center;
+    padding: 4em;
+    column-gap: 1em;
+    row-gap:1em;
+}
+.block a:hover{
+    opacity: 0.8;
+    background-color: white;
+}
+iframe:hover{
+    opacity: 0.8;
+    background-color: white;
+}
+.block-1{
+    background-color: #008080;
+}
+.block-2{
+    background-color: #008080;
+}
+.block-3{
+    background-color: #ff7f7f;
+}
+.block-4{
+    background-color: #ff7f7f;
+}
+.block-5{
+    background-color: #ff7f7f;
+}
+.block-6{
+    background-color: #008080;
+}
+.block-7{
+    background-color: #008080;
+}
+.block-8{
+    background-color: #ff7f7f;
+}
+.block-9{
+    background-color: #ff7f7f;
+}
+.block-10{
+    background-color: #ff7f7f;
+}
+.block-11{
+    background-color: #008080;
+}
+.block-12{
+    background-color: #008080;
+}
+@media (max-width: 960px){
+    .block img{
+        width: 5em;
+        height: 5em;
+    }
+    .block iframe{
+        display: none;
+    }
+    .block>section{
+        width: 5em;
+        height: 5em;
+    }
+    .block{
+        column-gap: 1.5em;
+        row-gap: 1.5em;
+    }
+}
+@media (min-width: 961px){
+    .block img{
+        display: none;
+    }
+    .block iframe{
+        width: 15em;
+        height: 15em;
+    }
+    .block>section{
+        width: 15em;
+        height: 15em;
+    }
+    .block{
+        column-gap: 11.5em;
+        row-gap: 11.5em;
+    }
+}
+
+@media (min-width: 100px){
+    nav {
+        height: 50px;
+    }
+    /*Historia Edurne*/
+    .historia {
+        display: grid;
+        
+    }
+    /*Miembros Edurne*/
+    .miembros {
+        display: grid;
+        grid-column: 1fr 1fr;
+        text-align: center;
     
-    font-size: 200%;
+    }
+    .miembros ul{
+        display: grid;
+        grid-column: repeat(3, 1fr);
+    }
+    
+    .miembros h2 {
+        font-size: 300%;
+    }
+    .tecla {
+        width: 50%;
+        border: 5px solid #008080;
+        border-radius: 50px;
+        display: grid;
+        grid-column: repeat(3, 1fr);
+        align-items: center;
+        box-shadow: 5px 5px 5px 2px #ff7f7f;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 150%;    
+    }
+    .tecla img {
+        width: 100%;
+    }
+    
+    .scroll-top { 
+        color: #005252;
+    }
+    
+}
+@media (min-width: 960px){
+    /*Historia Edurne*/
+    nav {
+        height: 50px;
+    }
+    .historia {
+        display: grid; 
+        width: 100%;
+    }
+    .historia h2 {
+        font-size: 300%;
+        text-align: center;
+    }
+    .historia ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        justify-content: center;
+        text-align: center;
+    }
+    .historia ul li img{
+        width: 100%;
+    }
+    /*Miembros Edurne*/
+    .miembros {
+        
+        text-align: center;
+    
+    }
+    .miembros ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    
+    .miembros h2 {
+        font-size: 300%;
+    }
+    .tecla {
+        width: 70%;
+        border: 5px solid #008080;
+        border-radius: 50px;
+        display: grid;
+        grid-column: repeat(3, 1fr);
+        align-items: center;
+        box-shadow: 5px 5px 5px 2px #ff7f7f;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 150%;    
+    }
+    .tecla img {
+        width: 100%;
+    }
+    
+    .scroll-top { 
+        color: #005252;
+    }
     
 }
 
-.scroll-top {
-}
+
 
 
 
