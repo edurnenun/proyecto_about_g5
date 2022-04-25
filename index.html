@@ -11,30 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/proyecto_about_g5/styles/style.css">
     <script src="https://kit.fontawesome.com/9ce40e58ae.js" crossorigin="anonymous"></script>
-    <script>
-        function myFunction() {
-  var x = document.getElementById("menu-nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-    </script>
-    
 
 </head>
 <body>
     <!--Header Start Edurne -->
     <header id="header"> <!--Se pone id para poder direccionar boton flecha hacia el header-->
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
             <img id="logo" src="images/logo.png" alt="logo">
-            
-                <!--menu navegacion (oculto por defecto)-->
+            <div class="respmenu"></div>
+                <input type="checkbox">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fas fa-times"></i>
                 <ul class="menu-nav">
                     <li><a href="#mission">Mission</a></li>
                     <li><a href="#history">History</a></li>
@@ -42,8 +29,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#membres">Membres</a></li>
                 </ul>
-                <!--menu hamburguesa-->
-                
+            </div>
         </nav>
         <h1>FEV</h1>
       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>

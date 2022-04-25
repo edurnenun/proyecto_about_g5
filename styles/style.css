@@ -50,7 +50,7 @@ nav a:hover{
     color: #ff7f7f;
 }
 nav{
-    height: 70px;
+    height: 50px;
     padding: 5px;
     width: 100%;
     display: inline-block;
@@ -58,53 +58,50 @@ nav{
     background-color: #008080;
     color: #f5f5f5;
 }
-
 #logo{
-    height: 6%;
-    top: 0;
+    height: 5%;
 }
-nav {
-    overflow: hidden;
-    background-color: #008080;
-    position: relative;
+.menu-nav{
+    display: grid;
+    justify-content: space-around;
 }
-
-nav .menu-nav{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #f5f5f5;
-    top: 50px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-}
-nav ul li {
+.respmenu a {
+    color: inherit;
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
-.menu-nav a {
-    color: #005252;
-}
-
-#check:checked ~ ul {
-    left: 0;
-}
-
-.fa-bars { /*poner estilos a la hamburguesa*/
+    padding: 10px 20px;
+    border-bottom: 2px solid #ff7f7f;
+    max-width: 200px;
     background-color: #f5f5f5;
-    color: #008080;
-    display: block;
+    font-variant: small-caps;
+    text-shadow:  1px 1px #005252;
+}
+.respmenu input[type="checkbox"], 
+.respmenu .fa-bars, 
+.respmenu .fa-times{
     position: absolute;
-    right: 50px;
-    top: 20px;
-    font-size: 230%;
-    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
 }
-.fa-bars:hover{
-    background-color: #ff7f7f;
+.respmenu input[type="checkbox"]{
+    opacity: 0;
 }
+.respmenu input:checked ~ .menu-nav {
+    display: block;
+}
+.respmenu input:checked ~ .fa-bars {
+    display: none;
+} 
+.respmenu input:checked ~ .fa-times {
+    display: none;
+} 
+.respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+} 
 h1 {
     color: #ff7f7f;
     font-size: 500%;
@@ -218,10 +215,21 @@ article>h2{
     margin: 2em;
 }
 .block a:hover{
+    display: block;
     opacity: 0.8;
     background-color: #f5f5f5;
+    text-decoration: none;
+    text-align: center;
+}
+.block a:hover::after {
+    content: 'Execise';
+    height: 0.15em;
+    width: 8em;
+    background-color: rgba(204, 204, 204, 0.4);
+    margin-bottom: 0.2em;
 }
 iframe:hover{
+    display: block;
     opacity: 0.8;
     background-color: #f5f5f5;
 }
@@ -308,13 +316,8 @@ iframe:hover{
 }
 details:hover{
     color: #ff7f7f;
-}
-.scroll-top{ 
-    color: #005252;
-}    
-.scroll-top a:hover{
-    color: #ff7f7f;
-}
+}  
+
 /*Reponsive*/
 
 @media (min-width: 996px){
@@ -323,14 +326,7 @@ details:hover{
         height: 50px;
         display: grid;
     }
-    #check {
-        display: none;
-    }
-    nav .fa-bars {
-        display: none;
-    }
     .menu-nav{
-        display: block;
         position: absolute;
         top: 10px;
         display: grid;
