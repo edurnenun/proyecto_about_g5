@@ -347,7 +347,7 @@ details:hover{
         background-color: #008080;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        padding-left: 500px;
+        padding-left: 700px;
      }
         
     .menu-nav a{
