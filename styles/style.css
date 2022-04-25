@@ -65,8 +65,15 @@ nav {
 }
 
 /*History Edurne*/
-.history {
-    display: grid;   
+#history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center; 
+}
+#history ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1 fr);
+    text-align: center; 
 }
 
 /*Idea Jaciniris*/
@@ -159,16 +166,16 @@ iframe:hover{
 }
 
 /*Membres Edurne*/
-.membres {
+#membres {
     display: grid;
     grid-column: 1fr 1fr;
     text-align: center;
 }
-.membres ul{
+#membres ul{
     display: grid;
     grid-column: repeat(3, 1fr);
 }
-.membres h2 {
+#membres h2 {
     font-size: 300%;
 }
 .tecla {
@@ -199,21 +206,21 @@ iframe:hover{
     nav {
         height: 50px;
     }
-    .history {
+    #history {
         display: grid; 
         width: 100%;
     }
-    .history h2 {
+    #history h2 {
         font-size: 300%;
         text-align: center;
     }
-    .history ul{
+    #history ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         justify-content: center;
         text-align: center;
     }
-    .history ul li img{
+    #history ul li img{
         width: 100%;
     }
 
@@ -244,14 +251,14 @@ iframe:hover{
     }
 
     /*Membres Edurne*/
-    .membres {    
+    #membres {    
         text-align: center;
     }
-    .membres ul{
+    #membres ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);   
     }   
-    .membres h2 {
+    #membres h2 {
         font-size: 300%;
     }
     .tecla {
