@@ -48,7 +48,9 @@ nav {
     display: grid;
     background-color: #008080;
     color: #f5f5f5;
-
+}
+nav a:hover {
+    color: #ff7f7f;
 }
 #logo {
     height: 5%;
@@ -283,7 +285,9 @@ details:hover{
 .scroll-top{ 
     color: #005252;
 }    
-
+.scroll-top a:hover{
+    color: #ff7f7f;
+}
 /*Reponsive*/
 
 @media (min-width: 996px){
@@ -355,12 +359,7 @@ details:hover{
     }
 
     /*Membres Edurne*/
-<<<<<<< HEAD
     #membres {   
-=======
-    #membres{   
-        margin-top: 200px; 
->>>>>>> 58a91ac95eea07ec70a06423c3d06ecbb5ed00ae
         text-align: center;
     }
     #membres ul{
@@ -387,11 +386,5 @@ details:hover{
     .tecla img{
         width: 100%;
     }    
-<<<<<<< HEAD
     
-=======
-    .scroll-top{ 
-        color: #005252;
-    } 
->>>>>>> 58a91ac95eea07ec70a06423c3d06ecbb5ed00ae
 }
