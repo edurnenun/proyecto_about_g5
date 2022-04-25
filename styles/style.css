@@ -82,6 +82,9 @@ article>h2{
     column-gap: 1em;
     row-gap:1em;
 }
+.title-p{
+    margin: 2em;
+}
 .block a:hover{
     opacity: 0.8;
     background-color: white;
