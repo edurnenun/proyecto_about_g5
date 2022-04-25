@@ -28,7 +28,7 @@ body{
 .scroll-top:hover{
     color: #ff7f7f;
 }
-section {
+section{
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -67,11 +67,10 @@ nav{
     top: 0;
     line-height: 70px;
 }
-nav {
+nav{
     
     background-color: #008080;
 }
-
 .menu-nav{
     position: fixed;
     width: 100%;
@@ -83,18 +82,17 @@ nav {
     transition: all .5s;
 }
 
-nav ul li {
+nav ul li{
     display: block;
     line-height: 30px;
 }
-.menu-nav a {
+.menu-nav a{
     color: #005252;
 }
 
-#check:checked ~ ul {
+#check:checked ~ ul{
     left: 0;
 }
-
 .fa-bars { /*poner estilos a la hamburguesa*/
     background-color: #f5f5f5;
     font-variant: small-caps;
@@ -354,18 +352,18 @@ details:hover{
         flex-direction: row;
         width: 100%;
     }
-    #logo {
+    #logo{
         border:1px solid blue;
         height: 100%;
     }
     
-    #check {
+    #check{
         display: none;
     }
-    nav .fa-bars {
+    nav .fa-bars{
         display: none;
     }
-    .menu-nav {
+    .menu-nav{
         position: inherit;/* lo he puesto para deshabilitat el position fix del movil*/
         width: 100%;
         background-color: #008080;
@@ -377,7 +375,7 @@ details:hover{
     .menu-nav a{
         color: #f5f5f5;
     }
-    .menu-nav li {
+    .menu-nav li{
         line-height: 60px;/*para corregir line height del movil*/
     }
     #history{
