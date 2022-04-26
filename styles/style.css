@@ -304,19 +304,19 @@ iframe:hover{
     height: 5em;
 }
 
-/*Membres Edurne*/
-#membres{
+/*Members Edurne*/
+#members{
     display: grid;
     grid-column: 1fr 1fr;
     text-align: center;
     margin-top: 50px;
 }
-#membres ul{
+#members ul{
     display: grid;
     grid-column: repeat(3, 1fr);
     color: #005252;
 }
-#membres h2{
+#members h2{
     font-size: 300%;
     color: #005252;
 }
@@ -430,15 +430,15 @@ details:hover{
         margin-top: 2.5em;
     }
 
-    /*Membres Edurne*/
-    #membres{    
+    /*Members Edurne*/
+    #members{    
         text-align: center;
     }
-    #membres ul{
+    #members ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);   
     }   
-    #membres h2{
+    #members h2{
         font-size: 300%;
     }
     .tecla{
